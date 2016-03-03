@@ -1,3 +1,4 @@
+
 snippet sapmlabel
 	var ${1} = new sap.m.Label({ 
 				design : ${2}, 
@@ -8,6 +9,7 @@ snippet sapmlabel
 				width : ${7}, 
 				required : ${7}
 			});
+endsnippet
 
 snippet sapmtext
 	var ${1} = new sap.m.Text({
@@ -19,6 +21,7 @@ snippet sapmtext
 				width :${7},
 				maxLines :${8}
 			});
+endsnippet
 
 snippet sapmbutton
 	var ${1} = new sap.m.Button({
@@ -32,6 +35,7 @@ snippet sapmbutton
 				activeIcon :${9},
 				iconDensityAware : ${10},
 			});
+endsnippet
 snippet sapmflexbox
 	var ${1} = new sap.m.FlexBox({
 				visible : ${2},
@@ -45,6 +49,7 @@ snippet sapmflexbox
 				alignItems : ${10},
 				items:[]
 			});
+endsnippet
 snippet sapmhbox
 	var ${1} = new sap.m.HBox({
 				visible : ${2},
@@ -58,6 +63,7 @@ snippet sapmhbox
 				alignItems : ${10},
 				items:[]
 			});
+endsnippet
 
 snippet sapmvbox
 	var ${1} = new sap.m.VBox({
@@ -72,6 +78,7 @@ snippet sapmvbox
 				alignItems : ${10},
 				items:[]
 			});
+endsnippet
 
 snippet sapcomponent
 	sap.ui.controller("${1}", {
@@ -85,6 +92,7 @@ snippet sapcomponent
 	   },
 	});
 
+endsnippet
 snippet sapminput
 	var ${1} = new sap.m.Input({
 		value :${2},
@@ -118,9 +126,7 @@ snippet sapminput
 		suggest : ${30},
 		suggestionItemSelected : ${31}
 	});
-snippet _sthis
-	var _self = this;
-
+endsnippet
 snippet sapmresponsivepopup
 	var ${1} = new sap.m.ResponsivePopover({
 				placement :${2} ,//sap.m.PlacementType (default: sap.m.PlacementType.Right)
@@ -149,6 +155,7 @@ snippet sapmresponsivepopup
 				beforeClose : ${22}, //fnListenerFunction or [fnListenerFunction, oListenerObject] or [oData, fnListenerFunction, oListenerObject]
 				afterClose : ${23} //fnList
 			});
+endsnippet
 
 snippet sapicon
 	var ${1} = new sap.ui.core.Icon({
@@ -165,6 +172,7 @@ snippet sapicon
 					visible :${11} , //boolean (default: true)
 					decorative : ${12} ,//boolean (default: true)
 				});
+endsnippet
 snippet extendVerticalL 
 	sap.ui.layout.VerticalLayout.extend("${1}", {
 	    metadata: {
@@ -184,6 +192,7 @@ snippet extendVerticalL
 	    
 	    renderer: "${6}"
 	});	
+endsnippet
 snippet extendHorizontalL 
 	sap.ui.layout.HorizontalLayout.extend("${1}", {
 	    metadata: {
@@ -203,3 +212,5 @@ snippet extendHorizontalL
 	    
 	    renderer: "${6}"
 	});	
+endsnippet
+);	
